@@ -13,10 +13,13 @@
 ## Security & .env file
 
 So before I wrote this paragraph I published this whole project as a new repository on github and only after that I discovered that some sensitive information was present in the settings.py file. It was even mentioned there but I did not pay attention to it.  
-Also I continued learning from the book and the next step is to create a superuser, ith passwords. And that of course rose some concerns about security. Now, Github do use hashing to hide the password but that did not fix the settings.py sensitive info.  
+Also I continued learning from the book and the next step is to create a superuser, with passwords. And that of course rose some concerns about security. Now, Github do use hashing to hide the password but that did not fix the settings.py sensitive info.  
 But the package dotenv, .env file and the .gitignore file do. This way I keep the sensitive info locally on my .env file as it is not committed due to being gitignored. 
 
 So I went through a good hour of tuts on YT and learnt about dotenv and how to use it with an .env file.  And this project now has an .env file. 
+
+And this also meant to gitignore the database file as it is a best-practice when it comes to security.  
+All of these measures are ok for a project like this because this is just me doing it on my own. Other solutions are to be used once this becomes a team work (I'm looking at github secrets). 
 
 ---
 
