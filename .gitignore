@@ -5,8 +5,7 @@ db.sqlite3
 *.db
 
 # pycache folders and files
-learning_logs\__pycache__\
-PCC_Django_App_Project\__pycache__\
+*.pyc
 
 # temp files
 *.tmp
