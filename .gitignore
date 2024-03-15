@@ -1,3 +1,16 @@
 .env
+
+# Database
 db.sqlite3
+*.db
+
+# pycache folders and files
+-f learning_logs/__pycache__/
+*.pyc
+-f PCC_Django_App_Project/__pycache__/
+*.pyc
+
+# temp files
+*.tmp
+*.cache/
 
