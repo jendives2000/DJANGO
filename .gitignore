@@ -12,3 +12,4 @@ PCC_Django_App_Project/__pycache__/
 *.tmp
 cache/
 
+"learning_logs/__pycache__/" 
