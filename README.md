@@ -56,7 +56,7 @@ AND, this prep work is needed for EVERY new project. So with Django, we're looki
 - and the absence of the potentially repetitive prep friction 
   - that could negatively impact our motivation rigth from the get-go
 
-So at the end of the day, using the CLI to setup a Django project instead of a GUI from your IDE (and I am not sure it is possibble) is still saving yourself time, even if you are learning how to use the CLI. 
+So at the end of the day, using the CLI to setup a Django project instead of a GUI from your IDE (and I am not sure it is possible) is still saving yourself time, even if you are learning how to use the CLI. 
 
 ### Necessity to Understand the Web
 
@@ -71,6 +71,8 @@ Then the model has to be prepared for migration and then it needs to be migrated
 ### Django Shell
 
 Because this is a web app project, it becomes more complex to test and find errors. Instead of going back and forth from the IDE to the web pages, we can use the shell to test out the app and potentially find errors. 
+
+![alt text](image-3.png)
 
 ---
 
@@ -89,8 +91,9 @@ Text
 ## How Well Did I do?
 
 After I compared my code to the solutions: 
-- **exercise **:  
-  Text 
+- **exercise 18-2**:  
+  
+  ![exercise 18-2: short entries](image-4.png)
 
   GRADE: Text. 
 
