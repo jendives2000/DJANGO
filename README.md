@@ -68,6 +68,10 @@ So when working with Django, one of the basic process is to create a model, whic
   
 Then the model has to be prepared for migration and then it needs to be migrated to the database. And this is the basic procedure of developing the app. 
 
+### Django Shell
+
+Because this is a web app project, it becomes more complex to test and find errors. Instead of going back and forth from the IDE to the web pages, we can use the shell to test out the app and potentially find errors. 
+
 ---
 
 ## Title 2
