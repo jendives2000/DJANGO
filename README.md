@@ -104,5 +104,7 @@ After I compared my code to the solutions:
 
 #### Resources:
 Python Crash Course 3rd Ed.: [solutions to exercises 8-8 to 8-10](https://ehmatthes.github.io/pcc_3e/solutions/chapter_8/#8-9-messages)  
-[YT video on dotenv](https://youtu.be/c42T5wKSztQ?si=ECQ_f3NRoxgDGGZh)  
-Github: [Icecream issues page](https://github.com/gruns/icecream/issues/79)
+IBM YT Channel: [What is a Relational Database](https://youtu.be/OqjJjpjDRLc?si=jdfqb3Qq0sBP6oJt)  
+Christopher Kalodikis YT Channel: [Relational Database Relationships](https://youtu.be/C3icLzBtg8I?si=_jvxtgWdONobDNnb)  
+Decomplexify YT Channel: [Database Keys Made Easy](https://youtu.be/8wUUMOKAK-c?si=XuHPVhF4WNatinFO)  
+Programming With Mosh YT Channel: [Python Django Tutorial for Beginners](https://youtu.be/8wUUMOKAK-c?si=XuHPVhF4WNatinFO)
