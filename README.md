@@ -21,6 +21,15 @@ So I went through a good hour of tuts on YT and learnt about dotenv and how to u
 And this also meant to gitignore the database file as it is a best-practice when it comes to security.  
 All of these measures are ok for a project like this because this is just me doing it on my own. Other solutions are to be used once this becomes a team work (I'm looking at github secrets). 
 
+## Gitignore to Keep Files Local
+
+When working with a team, not everything in a project file should be sent via a commit. This is true for temp files, and files that are repetitively regenerated, like the .pyc files. 
+
+Nothing hard in itself, but here in my case, I wanted to add .pyc files after I sent them via a previous commit. And this meant that now these files won't be gitignored by simply adding them to the .gitignore file.  
+The solution is to use a special command prompt in the CLI: `echo "whatever_file_path/or_file_name" >> .gitignore`. Followed by: `git rm --cached whatever_file_path/or_file_name`. Then add to the staging and commit. This is how I successfully gitignored all my .pyc files.
+
+![.pyc files gitgnored](image-1.png)
+
 ---
 
 ## Command Line Interface to Setup the Django Project
