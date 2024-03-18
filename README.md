@@ -85,18 +85,13 @@ However these templates are not typically used by back-end developers, nor by fr
 ### Weird Error Message
 
 As I was going through the book, I encountered an **error message**: 
+>Reverse for ' topic' not found. ' topic' is not a valid view function or pattern name.
 
-![error message](image-2.png)
+I took me at least 3 hours to figure it out and it was a simple typo, a tricky one but a simple one... And it was given to me all this time right there in the error message: ' topic'.  
+Emphasis on the empty space before topic. This is it, that's the typo. I removed the empty space and it worked.  
 
-I spent the next hour to figure out what happened, to triple check my code without any success. I decided to turn to claude.ai for help. And it told me the solution: a single '/' was missing, and the book **DID NOT** mention that.  
-I am guessing this is **due to the fact that I am on a Windows machine...** Linux machines probably do not have this kind of errors...  
+So why didn't I pay attention to it? Because of the formatter. A formatter is automatically reformatting your code to the standard (here pep8, at least most of them) and empty spaces are part of that reformatting. So to me it looked like that empty space was supposed to exist. And that lead me to look elsewhere for an answer. 
 
-So this was **related to the pattern definition in the urls.py file** of the app  learning_log (line 12):
-
-![alt text](image-5.png)
-
-Without the first `'/'` before topics/ this would return the error message.  
-What happened is that **without this first '/'** Django just thinks that the **URL topics/ is part of the URL of index**. And because the requests handler (views file) was set up to see it as a root and so not as part of the index URL, this is not working.  
 
 --- 
 
