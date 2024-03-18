@@ -76,9 +76,27 @@ Because this is a web app project, it becomes more complex to test and find erro
 
 ---
 
-## Title 2
+## URLs pattern & Request Handler (views.py)
 
-text
+The procedure is well known today. In a browser you request a URL, your browser check your app API and send a response with everything needed to render that URL. And this response often is HTML/CSS and JS code (so front-end languages).  
+Django is not a front-end framework, but it can still use these via the concept of templates that are written with template tags: `{% %}`.  
+However these templates are not typically used by back-end developers, nor by front-end ones, as they are better off using front-end frameworks. 
+
+### Weird Error Message
+
+As I was going through the book, I encountered an error message: 
+
+![error message](image-2.png)
+
+I spent the next hour to figure out what happened, to triple check my code without any success. I decided to turn to claude.ai for help. And it told me the solution: a single '/' was missing, and the book DID NOT mention that.  
+I am guessing this is due to the fact that I am on a windows machine... Linux machines probably do not have this kind of errors...  
+
+So this was related to the pattern definition in the urls.py file of the app  learning_log (line 12):
+
+![alt text](image-5.png)
+
+Without the first `'/'` before topics/ this would return the error message.  
+What happened is that without this first '/' Django just thinks that the URL topics/ is part of the URL of index. And because the requests handler (views file) was set up to see it as a root and so not as part of the index URL, this is not working.  
 
 --- 
 
