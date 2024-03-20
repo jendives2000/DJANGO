@@ -4,16 +4,10 @@
 
 <p>Add a new topic</p>
 
-<form <p>Entries</p>
-    <ul>
-        {% for entry in entries %}
-        <li>
-            <p>{{ entry.date_added | date:'d M, Y H:i' }}</p>
-            <p>{{ entry.text | linebreaks }}</p>
-        </li>
-        {% empty %}
-        <li>There are no entries for this topic yet.</li>
-        {% endfor %}
-    </ul>
+<form action='{% url "learning_logs:new_topic" %}' method="post">
+    {% csrf_token %}
+    {{ form.as_div }}
+    <button name="submit">Add topic</button>
+</form>
 
-    {% endblock content %}
+{% endblock content %}
