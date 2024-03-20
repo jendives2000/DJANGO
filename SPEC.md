@@ -33,7 +33,7 @@ A full spec details the project goals, describes the project’s functionality, 
     -  register 
     -  or log in: 
        -  Once logged in:
-          -   a user can create new topics, 
-          -   add new entries, 
+          -   a user can create new topics [x]
+          -   add new entries
           -   and read and edit existing entries.
 
